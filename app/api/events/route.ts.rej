@@ -1,0 +1,11 @@
+--- app/api/events/route.ts
++++ app/api/events/route.ts
+@@ -26 +26 @@
+-        { status: 400 },
++        { status: 400 }
+@@ -37 +37 @@
+-          if (error) { reject(error); return; }
++          if (Boolean(error)) { reject(error); return; }
+@@ -50 +50 @@
+-      { status: 201 },
++      { status: 201 }
